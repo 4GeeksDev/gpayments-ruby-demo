@@ -4,7 +4,7 @@ class PaymentsConnection
   def initialize
     @client_id = ENV["client_id"]
     @client_secret = ENV["client_secret"]
-    @base_url = ENV["base_url"]
+    @base_url = "https://api.payments.4geeks.io"
     @token = generate_token
   end
 
