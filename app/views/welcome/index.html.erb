@@ -1,0 +1,33 @@
+<style>
+    .demo-container {
+        width: 100%;
+        max-width: 350px;
+        margin: 50px auto;
+    }
+    form {
+        margin: 30px;
+    }
+    input {
+        width: 200px;
+        margin: 10px auto;
+        display: block;
+    }
+</style>
+<div class="demo-container">
+    <div class="card-wrapper"></div>
+
+    <div class="form-container active">
+      <%= form_tag simple_charge_path, remote: true do %>
+        <input placeholder="Card number" type="tel" name="number">
+        <input placeholder="Full name" type="text" name="name">
+        <input placeholder="MM/YY" type="tel" name="expiry">
+        <input placeholder="CVC" type="number" name="cvc">
+        <input placeholder="Amount to Charge" type="number" name="amount">
+        <%= submit_tag 'Create Charge' %>
+      <% end %>
+    </div>
+</div>
+
+<ul id="list_transactions" class="collection with-header">
+  <li class="collection-header"><h4>Sucessfull Transactions</h4></li>
+</ul>

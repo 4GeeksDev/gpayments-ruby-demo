@@ -1,0 +1,22 @@
+<li class="collection-item avatar">
+  <% if response[:code] != 201 %>
+    <i class="material-icons circle red">error</i>
+    <span class="title">Trasanction Not Created</span>
+    <p>
+      Status Code: <%= response[:code] %> <br>
+      Reason: <%= response[:body] %> 
+  <% else %>
+    <i class="material-icons circle green">done</i>
+    <span class="title">Trasanction Created</span>
+    <p>
+      Status Code: <%= response[:code] %> <br>
+      Card Number: <%= response[:body]['credit_card_number'] %> <br>
+      Security Code: <%= response[:body]['credit_card_security_code_number'] %> <br>
+      Exp Month: <%= response[:body]['exp_month'] %> <br>
+      Exp Year: <%= response[:body]['exp_year'] %> <br>
+      Amount: <%= response[:body]['amount'] %> <br>
+      Description: <%= response[:body]['description'] %> <br>
+      Currency: <%= response[:body]['currency'] %>
+    </p>
+  <% end %>
+</li>
