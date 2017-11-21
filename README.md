@@ -1,24 +1,38 @@
-# README
+# 4Geeks Payments - Ejemplo Ruby
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este proyecto pretende demostrar lo sencillo que es conectar [4Geeks Payments](4geeks.io/payments/) y poder empezar a procesar tarjetas de crédito o débito.
 
-Things you may want to cover:
+## Antes de Iniciar
 
-* Ruby version
+Este proyecto fue creado con la única intención de demostrar a gran escala lo que Payments puede ayudarte en tu proceso de desarollo. El código no es del todo final y poco a poco se implementara mas detalles para brindar diferentes ejemplos.
 
-* System dependencies
+### Prerequisitos
 
-* Configuration
+Tener instalado ruby en su version:
 
-* Database creation
+```
+ruby 2.3.1p112
+```
 
-* Database initialization
+Ademas, debes setear estas variables de ambiente para poder utilizar el sitema
 
-* How to run the test suite
+```
+ENV['client_id'] = "*************"
+ENV['client_secret'] = "***************************"
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Documentación
 
-* ...
+Para poder visualizar el como conectarse a nuestro API visita [esta pagina](http://docs.payments.4geeks.io/#testing-cards)
+
+
+## Ejemplo en Vivo
+
+El proyecto actualmente se encuentra hospedado en Heroku para que puedan visualizarlo corriendo: https://polar-ridge-68136.herokuapp.com/
+
+
+
+## Autor
+
+* **Sergio Monge** - *CTO en 4Geeks* - [Me](https://github.com/PurpleBooth)
