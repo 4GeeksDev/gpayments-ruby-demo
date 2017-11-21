@@ -1,6 +1,6 @@
 # 4Geeks Payments - Ejemplo Ruby
 
-Este proyecto pretende demostrar lo sencillo que es conectar [4Geeks Payments](4geeks.io/payments/) y poder empezar a procesar tarjetas de crédito o débito.
+Este proyecto pretende demostrar lo sencillo que es conectar [4Geeks Payments](http://4geeks.io/payments/) y poder empezar a procesar tarjetas de crédito o débito.
 
 ## Antes de Iniciar
 
