@@ -50,10 +50,10 @@ class PaymentsConnection
   end
 
   def expiry_mont(expiry)
-    expiry.split('/').first
+    expiry.split('/').first.to_i
   end
 
   def expiry_year(expiry)
-    expiry.split('/').second
+    expiry.split('/').second.to_i
   end
 end

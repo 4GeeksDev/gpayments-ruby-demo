@@ -38,7 +38,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'jquery-turbolinks'
-gem 'rest-client', '~> 1.8'
+gem 'rest-client', '2.0.1'
+gem 'stripe'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

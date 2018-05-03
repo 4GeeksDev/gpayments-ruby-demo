@@ -4,19 +4,20 @@
     <span class="title">Trasanction Not Created</span>
     <p>
       Status Code: <%= response[:code] %> <br>
-      Reason: <%= response[:body] %> 
+      Reason: <%= response[:body] %>
   <% else %>
     <i class="material-icons circle green">done</i>
     <span class="title">Trasanction Created</span>
     <p>
       Status Code: <%= response[:code] %> <br>
-      Card Number: <%= response[:body]['credit_card_number'] %> <br>
-      Security Code: <%= response[:body]['credit_card_security_code_number'] %> <br>
-      Exp Month: <%= response[:body]['exp_month'] %> <br>
-      Exp Year: <%= response[:body]['exp_year'] %> <br>
-      Amount: <%= response[:body]['amount'] %> <br>
-      Description: <%= response[:body]['description'] %> <br>
-      Currency: <%= response[:body]['currency'] %>
+      Card Number (last 4): <%= response[:body]['charge_log']['card']['last4'] %> <br>
+      Security Code Checl: <%= response[:body]['charge_log']['card']['cvc'] %> <br>
+      Exp Month: <%= response[:body]['charge_log']['card']['exp_month'] %> <br>
+      Exp Year: <%= response[:body]['charge_log']['card']['exp_year'] %> <br>
+      Card Brand: <%= response[:body]['charge_log']['card']['brand'] %> <br>
+      Amount: <%= response[:body]['charge_log']['amount'] %> <br>
+      Description: <%= response[:body]['charge_log']['description'] %> <br>
+      Currency: <%= response[:body]['charge_log']['currency'] %>
     </p>
   <% end %>
 </li>
