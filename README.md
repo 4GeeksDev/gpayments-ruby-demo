@@ -24,15 +24,16 @@ ENV['client_secret'] = "***************************"
 
 ### Documentación
 
-Para poder visualizar el como conectarse a nuestro API visita [esta pagina](http://docs.payments.4geeks.io/#testing-cards)
+En la [documentación del API](https://docs.4geeks.io/payments/api) encontrarás la referencia de cada endpoint disponible.
 
 
 ## Ejemplo en Vivo
 
 El proyecto actualmente se encuentra hospedado en Heroku para que puedan visualizarlo corriendo: https://polar-ridge-68136.herokuapp.com/
+Use estas [tarjetas de prueba](https://docs.4geeks.io/payments/api/testing-cards) para simular el comportamiento de una compra.
 
 
 
 ## Autor
 
-* **Sergio Monge** - *CTO en 4Geeks* - [Me](https://github.com/PurpleBooth)
+* **Sergio Monge**
