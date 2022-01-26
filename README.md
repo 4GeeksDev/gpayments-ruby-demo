@@ -30,7 +30,7 @@ En la [documentación del API](https://docs.4geeks.io/payments/api) encontrarás
 ## Ejemplo en Vivo
 
 El proyecto actualmente se encuentra hospedado en Heroku para que puedan visualizarlo corriendo: https://polar-ridge-68136.herokuapp.com/
-Use estas [tarjetas de prueba](https://docs.4geeks.io/payments/api/testing-cards) para simular el comportamiento de una compra.
+Use estas [tarjetas de prueba](https://docs.4geeks.io/api/testing-cards/) para simular el comportamiento de una compra.
 
 
 
